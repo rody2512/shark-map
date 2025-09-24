@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Earth 3D + Sharks Map</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- Three.js Scene -->
+    <div id="intro"></div>
+
+    <!-- Leaflet Map -->
+    <div id="map">
+      <div class="dropdown-container">
+        <select id="sharkSelect">
+          <option value="">--choose shark--</option>
+        </select>
+      </div>
+      <canvas id="planktonChart"></canvas>
+    </div>
+
+    <!-- Leaflet & Three.js -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
